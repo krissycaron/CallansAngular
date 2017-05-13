@@ -8,6 +8,26 @@
 	<link rel="stylesheet" type="text/css" href="./styles/main.css">
 </head>
 <body ng-app="CallanIsWeird">
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">
+	      </a>
+	    </div>
+	  </div>
+	</nav>
+	<div>
+		<h1>Callan's Weird Image</h1>	
+	</div>
+		<div ng-controller="imageShow">
+			<div class="container col-xs-offset-2">
+				<button class="col-xs-6 btn btn-info" ng-click="showWierd()">Show Me the Weird</button>
+			</div>	
+			<div ng-show="!showListView">
+				<div ng-repeat="image in imageShow"></div>
+				</div>
+			</div>	
+		</div>
 
 
 
