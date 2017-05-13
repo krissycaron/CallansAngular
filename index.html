@@ -23,8 +23,8 @@
 			<div class="container col-xs-offset-2">
 				<button class="col-xs-6 btn btn-info" ng-click="showWierd()">Show Me the Weird</button>
 			</div>	
-			<div ng-show="!showListView">
-				<div ng-repeat="image in imageShow"></div>
+				<div ng-show="showImageView">
+					<img ng-src={{image}}>
 				</div>
 			</div>	
 		</div>
